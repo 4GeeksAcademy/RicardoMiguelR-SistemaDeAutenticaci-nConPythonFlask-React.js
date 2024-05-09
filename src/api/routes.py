@@ -31,7 +31,7 @@ def handle_hello():
 def private():
 
     response_body = {
-        "message": "Este es un enpoint privado"
+        "message": "Este es un endpoint privado"
     }
 
     return jsonify(response_body), 200
@@ -51,7 +51,7 @@ def signup():
 def login():
 
     response_body = {
-        "message": "Este es login"
+        "message": "Este es un login"
     }
 
     return jsonify(response_body), 200
