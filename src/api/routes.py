@@ -6,6 +6,11 @@ from api.models import db, User
 from api.utils import generate_sitemap, APIException
 from flask_cors import CORS
 
+from flask_jwt_extended import create_access_token
+from flask_jwt_extended import get_jwt_identity
+from flask_jwt_extended import jwt_required
+from flask_jwt_extended import JWTManager
+
 api = Blueprint('api', __name__)
 
 # Allow CORS requests to this API
@@ -20,3 +25,36 @@ def handle_hello():
     }
 
     return jsonify(response_body), 200
+
+@api.route('/private', methods=['GET'])
+@jwt_required()
+def private():
+
+    response_body = {
+        "message": "Este es un enpoint privado"
+    }
+
+    return jsonify(response_body), 200
+
+@api.route('/signup', methods=['GET'])
+@jwt_required()
+def signup():
+
+    response_body = {
+        "message": "Este es signup"
+    }
+
+    return jsonify(response_body), 200
+
+@api.route('/login', methods=['GET'])
+@jwt_required()
+def login():
+
+    response_body = {
+        "message": "Este es login"
+    }
+
+    return jsonify(response_body), 200
+
+
+
