@@ -1,3 +1,77 @@
 /* 
     General Styles used on every website (Don't Repeat Yourself)
 */
+
+body {
+    background: rgba(34, 2, 2, 0.938);
+    color: white;
+    font-family: Franklin Gothic;
+}
+
+.navbar {
+    border-bottom: 1px solid grey;
+}
+
+.footer {
+    border-top: 1px solid grey;
+    height: 8rem;
+    padding: 2rem;
+}
+
+.body-login {
+    background: url('https://i.pinimg.com/originals/ae/7c/d0/ae7cd05d9438e3a42f955718affa1c9b.gif');
+    width: 35rem;
+    margin: auto;
+    padding: 4rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: border-color 0.3s ease-in-out;
+    color: black;
+}
+
+.body-login:hover {
+    border-color: #31eccd;
+}
+
+
+.body-signup {
+    background: url('https://i.pinimg.com/originals/fe/b6/87/feb6879f86e6b4f3d912fcabbff5244f.gif');
+    width: 35rem;
+    margin: auto;
+    padding: 2rem;
+    border: 2px solid transparent;
+    border-radius: 20%;
+    transition: border-color 0.3s ease-in-out;
+    color: black;
+}
+
+.body-signup:hover {
+    border-color: #31eccd;
+}
+
+.content-cr7 {
+    display: inline-grid;
+    place-items: center;
+}
+
+.content-cr7 {
+    background: rgba(114, 23, 133, 0.767);
+    border-radius: 30%;
+}
+
+.gif-cr7 {
+    background: white;
+    border-radius: 30%;
+}
+
+.img-4geeks {
+    background: #f5f5f5;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-4geeks:hover {
+    transform: scale(1.05);
+}
